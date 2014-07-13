@@ -7,7 +7,7 @@
 <body>
 <div align="center">
 <h2> Send Richard a Message:</h2>
-<form action="http://www.robserver.com/rich.php" method="post" id="custom">
+<form action="http://www.robserver.com/push/rich.php" method="post" id="custom">
 Message: <input type="text" name="message"><br>
 <br>
 <button type="submit" data-theme="b" data-inline="true" name="submit" value="submit-value">Send</button>
@@ -43,7 +43,7 @@ $("#custom").on("submit", function(e){
 
 <br><br>
 <br>
-<form action="rich.php" method="post" id="tea">
+<form action="http://www.robserver.com/push/rich.php" method="post" id="tea">
 <input type="hidden" name="message" value="Tea is ready Richard!">
 <button type="submit" data-theme="b" data-inline="true" name="submit" value="submit-value">Tea Time</button>
 </form><div id="result2"></div>
@@ -73,7 +73,7 @@ $("#tea").on("submit", function(e){
         $("#result2").html("");
       });
 </script>
-<form action="rich.php" method="post" id="lunch">
+<form action="http://www.robserver.com/push/rich.php" method="post" id="lunch">
 <input type="Hidden" name="message" value="Lunch is ready Richard!">
 <button type="submit" data-theme="b" data-inline="true" name="submit" value="submit-value">Lunch</button>
 </form><div id="result3"></div>
@@ -103,7 +103,7 @@ $("#lunch").on("submit", function(e){
         $("#result3").html("");
       });
 	  </script>
-<form action="rich.php" method="post" id="down">
+<form action="http://www.robserver.com/push/rich.php" method="post" id="down">
 <input type="hidden" name="message" value="can you come downstairs please">
 <button type="submit" data-theme="b" data-inline="true" name="submit" value="submit-value">Come Downstairs</button>
 </form><div id="result4"></div>

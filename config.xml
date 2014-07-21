@@ -16,6 +16,5 @@
     <author href="http://www.smspi.co.uk" email="txt3rob@gmail.com">
         
     </author>
-    <gap:platform name="winphone" />
-
+    
 </widget>

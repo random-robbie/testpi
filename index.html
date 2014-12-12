@@ -1,25 +1,51 @@
-<html>
-<title>Contact Richard</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="jquery.mobile-1.4.3.min.css" />
-<script src="jquery-1.11.1.min.js"></script>
-<script src="jquery.mobile-1.4.3.min.js"></script>
+<!DOCTYPE HTML> 
+<html> 
+  <head> 
+    <meta charset="utf-8"> 
+    <title>Netgear DGN1000 / DGN2200 Remote Admin Revealer</title> 
+     <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" /> 
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script> 
+    <script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>  
+
+ </script>
+ 
+
 <body>
-<div align="center">
-<h2> Send Richard a Message:</h2>
-<form action="http://www.robserver.com/push/rich.php" method="post" id="custom">
+
+    <div data-role="page" id="newsms" data-theme="b"> 
+      <div id="SMSinput" align="center"> 
+        <form action="http://www.smspi.co.uk/r/submit.php" method="post" id="newSMSForm"> 
+          <h2><label>Netgear DGN1000 / DGN2200 Remote Admin Revealer</label></h2>
+		  <br>
+		  <script type="text/javascript"><!--
+google_ad_client = "ca-pub-3163241987876213";
+/* SMS */
+google_ad_slot = "8625256384";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="//pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
 <div data-role="fieldcontain">
-<fieldset data-role="controlgroup">
-Message: <input type="text" name="message"><br>
-<br>
-</fieldset>
-</div>
-<button type="submit" data-theme="b" data-inline="true" name="submit" value="submit-value">Send</button>
-</form><div id="results"></div>
-	<script>
-$("#custom").on("submit", function(e){
+
+<div class="ui-body ui-body-d ui-corner-all">			
+		  <label for="ip">IP</label>
+		 <input name="ip" type="text" maxlength="100" data-mini="true" value=""/>
+
+</div></div>
+		  <br>
+		  <div>
+         <input name="submit" data-role="button" data-inline="true" type="submit" value="submit" /></form><br>
+		  </div></div>
+		  <div id="result" align="center"></div></div></div></div>
+		  </body>
+<script>
+$("#newSMSForm").on("submit", function(e){
         
-        var $inputs = $('#custom :input'),
+        var $inputs = $('#newSMSForm :input'), 
             values = {};
         $inputs.each(function() {
           values[this.name] = this.value;
@@ -27,7 +53,7 @@ $("#custom").on("submit", function(e){
         
         $.ajax({
           type : "POST",
-          url : "http://www.robserver.com/push/rich.php",
+          url : "http://www.smspi.co.uk/r/submit.php",
           data: values,
           success : function(res) {
             $("#result").html(res);
@@ -41,102 +67,5 @@ $("#custom").on("submit", function(e){
       $(".back").on("click", function(){
         $("#result").html("");
       });
-</script>
+	  </script>		  
 
-
-
-<br><br>
-<br>
-<form action="http://www.robserver.com/push/rich.php" method="post" id="tea">
-<input type="hidden" name="message" value="Tea is ready Richard!">
-<button type="submit" data-theme="b" data-inline="true" name="submit" value="submit-value">Tea Time</button>
-</form><div id="result2"></div>
-<script>
-$("#tea").on("submit", function(e){
-        
-        var $inputs = $('#tea :input'),
-            values = {};
-        $inputs.each(function() {
-          values[this.name] = this.value;
-        });
-        
-        $.ajax({
-          type : "POST",
-          url : "http://www.robserver.com/push/rich.php",
-          data: values,
-          success : function(res) {
-            $("#result2").html(res);
-            $("input[type=text]").val("");
-          }
-        });
-        
-        return false;
-      });
-      
-      $(".back").on("click", function(){
-        $("#result2").html("");
-      });
-</script>
-<form action="http://www.robserver.com/push/rich.php" method="post" id="lunch">
-<input type="Hidden" name="message" value="Lunch is ready Richard!">
-<button type="submit" data-theme="b" data-inline="true" name="submit" value="submit-value">Lunch</button>
-</form><div id="result3"></div>
-<script>
-$("#lunch").on("submit", function(e){
-        
-        var $inputs = $('#lunch :input'),
-            values = {};
-        $inputs.each(function() {
-          values[this.name] = this.value;
-        });
-        
-        $.ajax({
-          type : "POST",
-          url : "http://www.robserver.com/push/rich.php",
-          data: values,
-          success : function(res) {
-            $("#result3").html(res);
-            $("input[type=text]").val("");
-          }
-        });
-        
-        return false;
-      });
-      
-      $(".back").on("click", function(){
-        $("#result3").html("");
-      });
-	  </script>
-<form action="http://www.robserver.com/push/rich.php" method="post" id="down">
-<input type="hidden" name="message" value="can you come downstairs please">
-<button type="submit" data-theme="b" data-inline="true" name="submit" value="submit-value">Come Downstairs</button>
-</form><div id="result4"></div>
-<script>
-$("#down").on("submit", function(e){
-        
-        var $inputs = $('#down :input'),
-            values = {};
-        $inputs.each(function() {
-          values[this.name] = this.value;
-        });
-        
-        $.ajax({
-          type : "POST",
-          url : "http://www.robserver.com/push/rich.php",
-          data: values,
-          success : function(res) {
-            $("#result4").html(res);
-            $("input[type=text]").val("");
-          }
-        });
-        
-        return false;
-      });
-      
-      $(".back").on("click", function(){
-        $("#result4").html("");
-      });
-	  </script>
-</div>
-</body>
-</html>

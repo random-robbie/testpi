@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" ?>
     <widget xmlns   = "http://www.w3.org/ns/widgets"
         xmlns:gap   = "http://phonegap.com/ns/1.0"
-        id          = "com.phonegap.pushrichie"
-        versionCode = "10" 
+        id          = "com.robserver.netgear"
+        versionCode = "1" 
         version     = "1.0.0" >
 
     <!-- versionCode is optional and Android only -->
 
-    <name>Message Richie</name>
+    <name>Netgear Admin Revealer</name>
 
     <description>
-        Send a Message to Richie using push bullet
+    Netgear-DGN1000---DGN2200---Remote-Password-Finder
     </description>
 
-    <author href="http://www.smspi.co.uk" email="txt3rob@gmail.com">
+    <author href="http://www.github.com/txt3rob/" email="txt3rob@gmail.com">
         
     </author>
     

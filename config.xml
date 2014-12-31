@@ -17,14 +17,12 @@
         
     </author>
     <preference name="SplashScreen" value="foo" />
-	<preference name="SplashScreenDelay" value="10000" />
+	<
 	
 	<platform name="android">
-    <icon src="http://www.smspi.co.uk/sky/picons/1_0_1_1AFC_3FE_1_C00000_0_0_0.png"/>
-</platform>
+    <icon src="images/android_boot_image.jpg"/>
+	</platform>
  
-<platform name="ios">
-    <icon src="http://www.smspi.co.uk/sky/picons/1_0_1_1AFC_3FE_1_C00000_0_0_0.png"/>
-</platform>
-	
+
+	<preference name="SplashScreenDelay" value="10000" />
 </widget>
